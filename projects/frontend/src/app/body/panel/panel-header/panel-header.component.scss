@@ -1,0 +1,36 @@
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h5 {
+    font-weight: 700;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      margin-right: 1rem;
+    }
+    .edit-column {
+      border: 1px solid rgb(223, 223, 223);
+      border-radius: 0.5rem;
+      background-color: rgb(126, 126, 126);
+
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        font-size: 0.8rem;
+        color: #fff;
+        margin-right: 0.3rem;
+      }
+      :last-child {
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+}

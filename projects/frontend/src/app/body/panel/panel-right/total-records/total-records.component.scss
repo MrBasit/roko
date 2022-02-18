@@ -1,0 +1,22 @@
+i {
+  font-size: 20rem;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  > :first-child {
+    padding: 2rem;
+  }
+  > :last-child {
+    padding: 0 2rem 2rem 2rem;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.main {
+  height: 100%;
+}

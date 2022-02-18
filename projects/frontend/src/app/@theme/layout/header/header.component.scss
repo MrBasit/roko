@@ -1,0 +1,53 @@
+header {
+  padding: 0;
+}
+.header-container {
+  padding: 0 1rem;
+}
+
+.left {
+  h1 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .menu {
+  }
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .menu {
+    padding: 0;
+    display: inline;
+    // justify-content: space-between;
+    // align-items: center;
+  }
+  .menu h4 {
+    margin: 0;
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 2rem;
+  }
+  .form-control {
+    height: 25px;
+    font-size: 1rem;
+    background-color: #e3e3e3;
+  }
+  .icon-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-user > :first-child {
+    margin-right: 0.3rem;
+  }
+}
+.right > div:not(:first-child) {
+  border-left: 1px solid rgb(167, 167, 167);
+  padding: 0 1rem;
+}
+.right > :last-child > :last-child i {
+  font-size: 1rem;
+}

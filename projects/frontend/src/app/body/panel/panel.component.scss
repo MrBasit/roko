@@ -1,0 +1,8 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > :first-child {
+    margin-bottom: 1rem;
+  }
+}

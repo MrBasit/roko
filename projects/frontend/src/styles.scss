@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+@import "./assets/css/variable.scss";
+@import "./assets/css/mixins.scss";
+@import "./assets/css/style.scss";
+@import "./assets/css/responsive.scss";
+
+@import "~ngx-sharebuttons/themes/default";
+
+// template global styling
+// colors
+i {
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
+}
+// utility classes
+.template-header-container {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel-container {
+  padding: 1rem 4rem 0 4rem;
+}
