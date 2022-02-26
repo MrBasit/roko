@@ -1,5 +1,37 @@
 <div class="main-body">
-  <app-breadcrumb></app-breadcrumb>
+  <!-- breadcrumb -->
+  <div class="primary-container">
+    <div class="template-header-container">
+      <div class="breadcrumbs">
+        <div>
+          <i class="fas fa-arrow-left" style="font-size: 1.5rem"></i>
+        </div>
+        <div>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="#">Library</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <a routerLink="/home/data" routerLinkActive="link-active">link</a>
+        </div>
+        <div>
+          <a routerLink="/home/holder" routerLinkActive="link-active">link</a>
+        </div>
+        <div><a href="#">link</a></div>
+        <div><a href="#">link</a></div>
+        <div><a href="#">link</a></div>
+        <div><a href="#">link</a></div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+
   <!-- <router-outlet></router-outlet> -->
   <app-panel class="panel-container"></app-panel>
 </div>

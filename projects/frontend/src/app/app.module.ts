@@ -11,7 +11,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgHttpLoaderModule } from "ng-http-loader";
 import { ToastrModule } from "ngx-toastr";
 import { GlobalHttpInterceptor } from "./@core/lib";
-import { BreadcrumbComponent } from "./body/breadcrumb/breadcrumb.component";
 import { MainComponent } from "./body/main/main.component";
 import { PanelComponent } from "./body/panel/panel.component";
 import { PanelHeaderComponent } from "./body/panel/panel-header/panel-header.component";
@@ -26,7 +25,6 @@ import { RouterModule } from "@angular/router";
 @NgModule({
   declarations: [
     AppComponent,
-    BreadcrumbComponent,
     MainComponent,
     PanelComponent,
     PanelHeaderComponent,
