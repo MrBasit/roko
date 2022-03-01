@@ -6,7 +6,15 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./main.component.scss"],
 })
 export class MainComponent implements OnInit {
+  themeMode = true;
+  targetID = "default";
   constructor() {}
 
   ngOnInit(): void {}
+
+  getClassName(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    this.targetID = event.target.id;
+  }
 }

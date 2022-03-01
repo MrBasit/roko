@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-paragraphs',
-  templateUrl: './paragraphs.component.html',
-  styleUrls: ['./paragraphs.component.scss']
+  selector: "app-paragraphs",
+  templateUrl: "./paragraphs.component.html",
+  styleUrls: ["./paragraphs.component.scss"],
 })
 export class ParagraphsComponent implements OnInit {
+  themeMode = true;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

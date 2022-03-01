@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-geo-location',
-  templateUrl: './geo-location.component.html',
-  styleUrls: ['./geo-location.component.scss']
+  selector: "app-geo-location",
+  templateUrl: "./geo-location.component.html",
+  styleUrls: ["./geo-location.component.scss"],
 })
 export class GeoLocationComponent implements OnInit {
+  themeMode = true;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

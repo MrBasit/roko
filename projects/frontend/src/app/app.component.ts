@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { Spinkit } from 'ng-http-loader';
+import { Component } from "@angular/core";
+import { Spinkit } from "ng-http-loader";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = 'frontend';
+  themeMode = false;
+  title = "frontend";
   public spinkit = Spinkit;
 }

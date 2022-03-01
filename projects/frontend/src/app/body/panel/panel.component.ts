@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-panel',
-  templateUrl: './panel.component.html',
-  styleUrls: ['./panel.component.scss']
+  selector: "app-panel",
+  templateUrl: "./panel.component.html",
+  styleUrls: ["./panel.component.scss"],
 })
 export class PanelComponent implements OnInit {
+  themeMode = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -15,23 +15,97 @@
             </li>
           </ol>
         </div>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >change theme</label
+          >
+        </div>
       </div>
       <div class="right">
-        <div>
-          <a routerLink="/home/data" routerLinkActive="link-active">link</a>
-        </div>
-        <div>
-          <a routerLink="/home/holder" routerLinkActive="link-active">link</a>
-        </div>
-        <div><a href="#">link</a></div>
-        <div><a href="#">link</a></div>
-        <div><a href="#">link</a></div>
-        <div><a href="#">link</a></div>
+        <a
+          href="#"
+          (click)="getClassName($event)"
+          id="template0"
+          [className]="
+            targetID === 'default' || targetID === 'template0'
+              ? 'activelink'
+              : 'active'
+          "
+          >link</a
+        >
+
+        <a
+          href="#"
+          (click)="getClassName($event)"
+          id="template1"
+          [className]="targetID === 'template1' ? 'activelink' : 'active'"
+          >link</a
+        >
+
+        <a
+          href="#"
+          id="template2"
+          (click)="getClassName($event)"
+          [className]="targetID === 'template2' ? 'activelink' : 'active'"
+          >link</a
+        >
+
+        <a
+          href="#"
+          id="template3"
+          (click)="getClassName($event)"
+          [className]="targetID === 'template3' ? 'activelink' : 'active'"
+          >link</a
+        >
+
+        <a
+          href="#"
+          id="template4"
+          (click)="getClassName($event)"
+          [className]="targetID === 'template4' ? 'activelink' : 'active'"
+          >link</a
+        >
+
+        <a
+          href="#"
+          id="template5"
+          (click)="getClassName($event)"
+          [className]="targetID === 'template5' ? 'activelink' : 'active'"
+          >link</a
+        >
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- <router-outlet></router-outlet> -->
+    <div class="parent" [ngSwitch]="targetID">
+      <div *ngSwitchCase="'template0'">
+        <app-panel class="panel-container"></app-panel>
+      </div>
+      <div class="div-container" *ngSwitchCase="'template1'">
+        <div>template1</div>
+      </div>
+      <div class="div-container" *ngSwitchCase="'template2'">
+        <div>template2</div>
+      </div>
+      <div class="div-container" *ngSwitchCase="'template3'">
+        <div>template3</div>
+      </div>
+      <div class="div-container" *ngSwitchCase="'template4'">
+        <div>template4</div>
+      </div>
+      <div class="div-container" *ngSwitchCase="'template5'">
+        <div>template5</div>
+      </div>
+      <div *ngSwitchDefault>
+        <app-panel class="panel-container"></app-panel>
       </div>
     </div>
-    <!-- </div> -->
   </div>
-
-  <!-- <router-outlet></router-outlet> -->
-  <app-panel class="panel-container"></app-panel>
 </div>
