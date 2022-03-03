@@ -12,7 +12,6 @@ export class CollapsibleComponent implements OnInit {
   isDarkMode = false;
   constructor(private helperservice: HelperService) {
     this.helperservice.ThemeChanged$.subscribe((r) => {
-      console.log("theme changed received -> DarkMode:", r);
       this.isDarkMode = r;
     });
   }

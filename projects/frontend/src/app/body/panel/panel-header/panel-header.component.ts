@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./panel-header.component.scss"],
 })
 export class PanelHeaderComponent implements OnInit {
-  themeMode = true;
+  isDarkMode = true;
   constructor() {}
 
   ngOnInit(): void {}

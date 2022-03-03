@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { HelperService } from "projects/frontend/src/app/services/helper.service";
 
 @Component({
   selector: "app-total-records",
@@ -7,7 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class TotalRecordsComponent implements OnInit {
   isDarkMode = false;
-  constructor() {}
+  constructor(private helperservice: HelperService) {
+    this.helperservice.ThemeChanged$.subscribe((r) => {
+      this.isDarkMode = r;
+    });
+  }
 
   ngOnInit(): void {}
 }

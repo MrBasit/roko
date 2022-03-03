@@ -22,15 +22,8 @@ h5 {
   padding: 0 1rem;
 }
 
-.progress-bar {
-  background-color: rgb(92, 92, 92);
-}
-
-.lightmode {
-  background-color: #fff;
-}
 .darkmode {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #fff;
+  .check-variables {
+    border: 1px solid #fff;
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { HelperService } from "../../services/helper.service";
 
 @Component({
   selector: "app-main",
@@ -6,9 +7,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./main.component.scss"],
 })
 export class MainComponent implements OnInit {
-  isDarkMode = true;
+  isDarkMode = false;
   targetID = "default";
-  constructor() {}
+  constructor(private helperservice: HelperService) {
+    this.helperservice.ThemeChanged$.subscribe((r) => {
+      this.isDarkMode = r;
+    });
+  }
 
   ngOnInit(): void {}
 

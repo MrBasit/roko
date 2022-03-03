@@ -7,13 +7,18 @@ import { HelperService } from "../../../services/helper.service";
   styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
-  themeMode = false;
+  isDarkMode = false;
+
   //@Input() headerType: string = 'GUEST';
   public homePageURL: string = "/";
   public loggedUser: any;
   headerType: string = "GUEST";
 
-  constructor(private helperservice: HelperService) {}
+  constructor(private helperservice: HelperService) {
+    this.helperservice.ThemeChanged$.subscribe((r) => {
+      this.isDarkMode = r;
+    });
+  }
 
   ngOnInit(): void {
     /* console.log(this.loggedUser) */

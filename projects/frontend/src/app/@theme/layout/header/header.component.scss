@@ -1,5 +1,7 @@
+@import "../../../../assets/css/variable.scss";
 header {
   padding: 0;
+  box-shadow: none;
 }
 .header-container {
   padding: 0 1rem;
@@ -52,4 +54,16 @@ header {
 }
 .right > :last-child > :last-child i {
   font-size: 1rem;
+}
+
+.lightmode {
+  border: none;
+  box-shadow: 0px 1px 5px 0px #cecece;
+}
+.darkmode {
+  border: none;
+  box-shadow: 0px 1px 5px 0px #dcdcdc;
+  .search input {
+    background-color: #fff;
+  }
 }

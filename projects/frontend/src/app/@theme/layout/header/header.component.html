@@ -1,6 +1,12 @@
 <!-- header -->
 <header>
-  <div class="template-header-container header-container">
+  <div
+    [className]="
+      isDarkMode
+        ? 'template-header-container header-container darkmode'
+        : 'template-header-container header-container lightmode'
+    "
+  >
     <div class="left">
       <div class="logo">
         <h1>Hocelot</h1>

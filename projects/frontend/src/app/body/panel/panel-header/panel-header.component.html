@@ -3,7 +3,11 @@
     <h5>Quality</h5>
     <div class="right">
       <a href="#">link.svg</a>
-      <div class="edit-column">
+      <div
+        [className]="
+          isDarkMode ? 'edit-column darkmode' : 'edit-column lightmode'
+        "
+      >
         <div>
           <i class="far fa-pen"></i>
         </div>

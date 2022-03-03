@@ -1,6 +1,12 @@
-<div class="mainbody" [ngClass]="{ mainbody: isDarkMode }">
+<div class="mainbody">
   <!-- breadcrumb -->
-  <div class="primary-container">
+  <div
+    [className]="
+      isDarkMode
+        ? 'primary-container darktheme'
+        : 'primary-container lighttheme'
+    "
+  >
     <div class="template-header-container">
       <div class="breadcrumbs">
         <div>
