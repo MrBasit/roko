@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./paragraphs.component.scss"],
 })
 export class ParagraphsComponent implements OnInit {
-  themeMode = true;
+  isDarkMode = true;
   constructor() {}
 
   ngOnInit(): void {}

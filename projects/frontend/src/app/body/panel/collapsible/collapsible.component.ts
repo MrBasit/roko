@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CollapsibleComponent implements OnInit {
   collapse = false;
-  themeMode = true;
+  isDarkMode = true;
   constructor() {}
 
   ngOnInit(): void {}

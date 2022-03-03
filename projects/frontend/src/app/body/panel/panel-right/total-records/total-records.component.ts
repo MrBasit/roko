@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./total-records.component.scss"],
 })
 export class TotalRecordsComponent implements OnInit {
-  themeMode = false;
+  isDarkMode = false;
   constructor() {}
 
   ngOnInit(): void {}

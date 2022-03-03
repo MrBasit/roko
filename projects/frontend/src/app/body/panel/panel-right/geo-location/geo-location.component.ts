@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./geo-location.component.scss"],
 })
 export class GeoLocationComponent implements OnInit {
-  themeMode = true;
+  isDarkMode = true;
   constructor() {}
 
   ngOnInit(): void {}

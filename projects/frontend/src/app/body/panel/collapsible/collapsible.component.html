@@ -1,5 +1,8 @@
 <div id="collapsible">
-  <div class="collapse-panel main">
+  <div
+    class="main"
+    [className]="isDarkMode ? 'main collapsepanel lightmode' : 'darkmode'"
+  >
     <div class="collapse-heading utl-flex">
       <h4 class="panel-title">Required Varaibles</h4>
       <span class="pull-right clickable"

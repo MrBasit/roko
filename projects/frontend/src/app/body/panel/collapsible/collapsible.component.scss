@@ -1,5 +1,4 @@
-.collapse-panel {
-  background-color: #fff;
+.collapsepanel {
   border-radius: 1rem;
   .collapse-heading {
     margin-bottom: 2rem;
@@ -44,4 +43,12 @@
   .body-collapsible.ccollapsible {
     height: 30rem;
   }
+}
+
+.lightmode {
+  background-color: #fff;
+}
+.darkmode {
+  background-color: #000;
+  color: white;
 }
