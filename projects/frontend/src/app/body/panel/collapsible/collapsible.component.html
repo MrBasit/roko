@@ -1,7 +1,11 @@
 <div id="collapsible">
   <div
     class="main"
-    [className]="isDarkMode ? 'main collapsepanel lightmode' : 'darkmode'"
+    [className]="
+      isDarkMode
+        ? 'main collapsepanel darkmode'
+        : 'main collapsepanel lightmode'
+    "
   >
     <div class="collapse-heading utl-flex">
       <h4 class="panel-title">Required Varaibles</h4>

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { HelperService } from "../../../services/helper.service";
 
 @Component({
   selector: "elephy-header",
@@ -12,9 +13,13 @@ export class HeaderComponent implements OnInit {
   public loggedUser: any;
   headerType: string = "GUEST";
 
-  constructor() {}
+  constructor(private helperservice: HelperService) {}
 
   ngOnInit(): void {
     /* console.log(this.loggedUser) */
+  }
+  changeTheme(e) {
+    console.log(e.target.checked);
+    this.helperservice.EmitThemeChange(e.target.checked);
   }
 }

@@ -1,5 +1,6 @@
 import { analyzeAndValidateNgModules } from "@angular/compiler";
 import { Component, OnInit } from "@angular/core";
+import { HelperService } from "../../../services/helper.service";
 
 @Component({
   selector: "app-collapsible",
@@ -8,8 +9,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CollapsibleComponent implements OnInit {
   collapse = false;
-  isDarkMode = true;
-  constructor() {}
+  isDarkMode = false;
+  constructor(private helperservice: HelperService) {
+    this.helperservice.ThemeChanged$.subscribe((r) => {
+      console.log("theme changed received -> DarkMode:", r);
+      this.isDarkMode = r;
+    });
+  }
 
   ngOnInit(): void {}
   openCollapsible(e) {
