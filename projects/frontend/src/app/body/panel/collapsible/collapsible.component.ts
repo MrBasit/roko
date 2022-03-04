@@ -9,8 +9,9 @@ import { HelperService } from "../../../services/helper.service";
 })
 export class CollapsibleComponent implements OnInit {
   collapse = false;
-  isDarkMode = false;
+  isDarkMode: boolean;
   constructor(private helperservice: HelperService) {
+    this.isDarkMode = helperservice.isDarkMode;
     this.helperservice.ThemeChanged$.subscribe((r) => {
       this.isDarkMode = r;
     });

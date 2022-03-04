@@ -7,8 +7,9 @@ import { HelperService } from "projects/frontend/src/app/services/helper.service
   styleUrls: ["./total-records.component.scss"],
 })
 export class TotalRecordsComponent implements OnInit {
-  isDarkMode = false;
+  isDarkMode: boolean;
   constructor(private helperservice: HelperService) {
+    this.isDarkMode = this.helperservice.isDarkMode;
     this.helperservice.ThemeChanged$.subscribe((r) => {
       this.isDarkMode = r;
     });

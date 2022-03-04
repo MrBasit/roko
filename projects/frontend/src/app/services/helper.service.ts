@@ -5,9 +5,11 @@ import { Subject } from "rxjs";
   providedIn: "root",
 })
 export class HelperService {
+  isDarkMode = false;
   private themechange = new Subject<any>();
   ThemeChanged$ = this.themechange.asObservable();
   EmitThemeChange(change: any) {
+    this.isDarkMode = change;
     this.themechange.next(change);
   }
   constructor() {}
